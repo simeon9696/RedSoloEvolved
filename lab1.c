@@ -14,7 +14,7 @@ void main (void){
     
     
     for(i=1; i<= 15;i++){
-        PORTB = i;
+        PORTB =i;
     }
 
 }
