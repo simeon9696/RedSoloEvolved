@@ -108,6 +108,8 @@ void HRV(void){
             flag = 1;
         }
     }    
+    CloseCapture1();
+    CloseTimer1();
     
     //Display HRV reading on LCD
     sprintf(output,"HRV: %d",hrv);  
@@ -143,8 +145,7 @@ void high_ISR(void){
     {         
         PIR1bits.CCP1IF = 0;  
         HRV();
-        CloseCapture1();
-        CloseTimer1();
+        
     }   
     
     return;
