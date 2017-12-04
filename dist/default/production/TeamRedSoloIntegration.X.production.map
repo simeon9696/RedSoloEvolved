@@ -1,0 +1,1352 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Wed Nov 29 18:27:51 2017
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+       .code__user_putc.o       code   0x000006    program   0x000002
+              high_vector       code   0x000008    program   0x000006
+          .code_adcbusy.o       code   0x00000e    program   0x00000a
+               low_vector       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00001e    program   0x00000e
+          .code_newmain.o       code   0x00002c    program   0x001d94
+         .code_vfprintf.o       code   0x001dc0    program   0x000c22
+                     PROG       code   0x0029e2    program   0x0003cc
+             .stringtable    romdata   0x002dae    program   0x0001c4
+         .code_openxlcd.o       code   0x002f72    program   0x0000ce
+          .code_sprintf.o       code   0x003040    program   0x0000ac
+               _cinit_scn       code   0x0030ec    program   0x00009e
+             .code_putc.o       code   0x00318a    program   0x000084
+          .code_fxm3232.o       code   0x00320e    program   0x000070
+         .code_pw1setoc.o       code   0x00327e    program   0x00006c
+                   STRING       code   0x0032ea    program   0x000066
+         .code_pw1setdc.o       code   0x003350    program   0x00005a
+         .code_setddram.o       code   0x0033aa    program   0x00004e
+         .code_setcgram.o       code   0x0033f8    program   0x00004e
+         .code_putrxlcd.o       code   0x003446    program   0x00004e
+         .code_writdata.o       code   0x003494    program   0x00004c
+         .code_wcmdxlcd.o       code   0x0034e0    program   0x00004c
+         .code_putsxlcd.o       code   0x00352c    program   0x00004a
+         .code_fxd3232u.o       code   0x003576    program   0x000048
+         .code_readdata.o       code   0x0035be    program   0x000044
+         .code_readaddr.o       code   0x003602    program   0x000044
+          .code_adcopen.o       code   0x003646    program   0x00003c
+           .code_t0read.o       code   0x003682    program   0x00003a
+         .code_busyxlcd.o       code   0x0036bc    program   0x000036
+          .code_t0write.o       code   0x0036f2    program   0x000034
+             D10KTCYXCODE       code   0x003726    program   0x00002e
+           .code_t0open.o       code   0x003754    program   0x00002c
+           .code_t2open.o       code   0x003780    program   0x00002a
+                    CTYPE       code   0x0037aa    program   0x000024
+          .code_pw1open.o       code   0x0037ce    program   0x000024
+     .code_adcselchconv.o       code   0x0037f2    program   0x000022
+              D1KTCYXCODE       code   0x003814    program   0x000020
+         .code_adcsetch.o       code   0x003834    program   0x000020
+                    .code       code   0x003854    program   0x000020
+             _startup_scn       code   0x003874    program   0x00001c
+                    STDIO       code   0x003890    program   0x00001c
+           .code_t2read.o       code   0x0038ac    program   0x00001a
+              D10TCYXCODE       code   0x0038c6    program   0x000016
+          .code_t2write.o       code   0x0038dc    program   0x000016
+          .code_adcread.o       code   0x0038f2    program   0x000012
+      .romdata_vfprintf.o    romdata   0x003904    program   0x000011
+       .idata_pw1open.o_i    romdata   0x003915    program   0x000000
+       .romdata_pw1open.o    romdata   0x003915    program   0x000000
+      .romdata_pw1close.o    romdata   0x003915    program   0x000000
+    .romdata__user_putc.o    romdata   0x003915    program   0x000000
+    .idata__user_putc.o_i    romdata   0x003915    program   0x000000
+      .idata_pw1close.o_i    romdata   0x003915    program   0x000000
+      .idata_pw1setdc.o_i    romdata   0x003915    program   0x000000
+      .romdata_pw1setdc.o    romdata   0x003915    program   0x000000
+          .romdata_putc.o    romdata   0x003915    program   0x000000
+      .idata_pw1setoc.o_i    romdata   0x003915    program   0x000000
+      .romdata_pw1setoc.o    romdata   0x003915    program   0x000000
+          .idata_putc.o_i    romdata   0x003915    program   0x000000
+       .idata_t2close.o_i    romdata   0x003915    program   0x000000
+       .romdata_t2close.o    romdata   0x003915    program   0x000000
+       .romdata_fxm3232.o    romdata   0x003915    program   0x000000
+        .idata_t2open.o_i    romdata   0x003915    program   0x000000
+        .romdata_t2open.o    romdata   0x003915    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x003915    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x003915    program   0x000000
+        .idata_t2read.o_i    romdata   0x003915    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x003915    program   0x000000
+        .romdata_t2read.o    romdata   0x003915    program   0x000000
+       .idata_t2write.o_i    romdata   0x003915    program   0x000000
+       .romdata_t2write.o    romdata   0x003915    program   0x000000
+      .idata_vfprintf.o_i    romdata   0x003915    program   0x000000
+       .romdata_sprintf.o    romdata   0x003915    program   0x000000
+       .idata_sprintf.o_i    romdata   0x003915    program   0x000000
+        .romdata___init.o    romdata   0x003915    program   0x000000
+        .idata___init.o_i    romdata   0x003915    program   0x000000
+        .idata_t0read.o_i    romdata   0x003915    program   0x000000
+        .romdata_t0open.o    romdata   0x003915    program   0x000000
+        .idata_t0open.o_i    romdata   0x003915    program   0x000000
+       .romdata_t0close.o    romdata   0x003915    program   0x000000
+       .idata_t0close.o_i    romdata   0x003915    program   0x000000
+      .romdata_setddram.o    romdata   0x003915    program   0x000000
+      .idata_setddram.o_i    romdata   0x003915    program   0x000000
+      .romdata_setcgram.o    romdata   0x003915    program   0x000000
+      .idata_setcgram.o_i    romdata   0x003915    program   0x000000
+      .romdata_readdata.o    romdata   0x003915    program   0x000000
+      .idata_readdata.o_i    romdata   0x003915    program   0x000000
+      .romdata_readaddr.o    romdata   0x003915    program   0x000000
+      .idata_readaddr.o_i    romdata   0x003915    program   0x000000
+      .romdata_putsxlcd.o    romdata   0x003915    program   0x000000
+      .idata_putsxlcd.o_i    romdata   0x003915    program   0x000000
+      .romdata_putrxlcd.o    romdata   0x003915    program   0x000000
+      .idata_putrxlcd.o_i    romdata   0x003915    program   0x000000
+      .romdata_openxlcd.o    romdata   0x003915    program   0x000000
+      .idata_openxlcd.o_i    romdata   0x003915    program   0x000000
+      .romdata_busyxlcd.o    romdata   0x003915    program   0x000000
+      .idata_busyxlcd.o_i    romdata   0x003915    program   0x000000
+       .romdata_newmain.o    romdata   0x003915    program   0x000000
+         .romdata_c018i.o    romdata   0x003915    program   0x000000
+         .idata_c018i.o_i    romdata   0x003915    program   0x000000
+      .romdata_adcsetch.o    romdata   0x003915    program   0x000000
+      .idata_adcsetch.o_i    romdata   0x003915    program   0x000000
+  .romdata_adcselchconv.o    romdata   0x003915    program   0x000000
+  .idata_adcselchconv.o_i    romdata   0x003915    program   0x000000
+       .romdata_adcread.o    romdata   0x003915    program   0x000000
+       .idata_adcread.o_i    romdata   0x003915    program   0x000000
+       .romdata_adcopen.o    romdata   0x003915    program   0x000000
+       .idata_adcopen.o_i    romdata   0x003915    program   0x000000
+       .romdata_adcconv.o    romdata   0x003915    program   0x000000
+       .idata_adcconv.o_i    romdata   0x003915    program   0x000000
+      .romdata_adcclose.o    romdata   0x003915    program   0x000000
+      .idata_adcclose.o_i    romdata   0x003915    program   0x000000
+        .romdata_t0read.o    romdata   0x003915    program   0x000000
+       .romdata_adcbusy.o    romdata   0x003915    program   0x000000
+       .idata_t0write.o_i    romdata   0x003915    program   0x000000
+       .idata_adcbusy.o_i    romdata   0x003915    program   0x000000
+       .romdata_t0write.o    romdata   0x003915    program   0x000000
+      .romdata_writdata.o    romdata   0x003915    program   0x000000
+      .idata_writdata.o_i    romdata   0x003915    program   0x000000
+      .romdata_wcmdxlcd.o    romdata   0x003915    program   0x000000
+      .idata_wcmdxlcd.o_i    romdata   0x003915    program   0x000000
+            .code_c018i.o       code   0x003916    program   0x000000
+          .code_t2close.o       code   0x003916    program   0x000006
+          .code_t0close.o       code   0x00391c    program   0x000006
+         .code_adcclose.o       code   0x003922    program   0x000006
+         .code_pw1close.o       code   0x003928    program   0x000004
+          .code_adcconv.o       code   0x00392c    program   0x000004
+           .code___init.o       code   0x003930    program   0x000002
+       .idata_newmain.o_i    romdata   0x003932    program   0x000029
+ .config_300003_newmain.o    romdata   0x300003    program   0x000001
+ .config_300006_newmain.o    romdata   0x300006    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000014
+                 .tmpdata      udata   0x000014       data   0x000007
+                DELAYDAT2      udata   0x00001b       data   0x000001
+                DELAYDAT1      udata   0x00001c       data   0x000001
+         .udata_newmain.o      udata   0x000080       data   0x00007e
+          .idata_t2open.o      idata   0x0000fe       data   0x000000
+          .udata_t2open.o      udata   0x0000fe       data   0x000000
+         .idata_t2close.o      idata   0x0000fe       data   0x000000
+         .udata_t2close.o      udata   0x0000fe       data   0x000000
+        .idata_pw1setoc.o      idata   0x0000fe       data   0x000000
+        .udata_pw1setoc.o      udata   0x0000fe       data   0x000000
+        .idata_pw1setdc.o      idata   0x0000fe       data   0x000000
+        .udata_pw1setdc.o      udata   0x0000fe       data   0x000000
+         .idata_pw1open.o      idata   0x0000fe       data   0x000000
+         .udata_pw1open.o      udata   0x0000fe       data   0x000000
+        .idata_pw1close.o      idata   0x0000fe       data   0x000000
+        .udata_pw1close.o      udata   0x0000fe       data   0x000000
+        .idata_adcsetch.o      idata   0x0000fe       data   0x000000
+        .udata_adcsetch.o      udata   0x0000fe       data   0x000000
+    .idata_adcselchconv.o      idata   0x0000fe       data   0x000000
+    .udata_adcselchconv.o      udata   0x0000fe       data   0x000000
+         .idata_adcread.o      idata   0x0000fe       data   0x000000
+         .udata_adcread.o      udata   0x0000fe       data   0x000000
+      .idata__user_putc.o      idata   0x0000fe       data   0x000000
+      .udata__user_putc.o      udata   0x0000fe       data   0x000000
+            .idata_putc.o      idata   0x0000fe       data   0x000000
+            .udata_putc.o      udata   0x0000fe       data   0x000000
+         .idata_fxm3232.o      idata   0x0000fe       data   0x000000
+         .udata_fxm3232.o      udata   0x0000fe       data   0x000000
+        .idata_fxd3232u.o      idata   0x0000fe       data   0x000000
+        .udata_fxd3232u.o      udata   0x0000fe       data   0x000000
+        .idata_vfprintf.o      idata   0x0000fe       data   0x000000
+        .udata_vfprintf.o      udata   0x0000fe       data   0x000000
+         .idata_sprintf.o      idata   0x0000fe       data   0x000000
+         .udata_sprintf.o      udata   0x0000fe       data   0x000000
+          .idata___init.o      idata   0x0000fe       data   0x000000
+          .udata___init.o      udata   0x0000fe       data   0x000000
+         .idata_t2write.o      idata   0x0000fe       data   0x000000
+         .udata_t2write.o      udata   0x0000fe       data   0x000000
+          .idata_t2read.o      idata   0x0000fe       data   0x000000
+          .udata_t2read.o      udata   0x0000fe       data   0x000000
+         .udata_t0close.o      udata   0x0000fe       data   0x000000
+        .idata_setddram.o      idata   0x0000fe       data   0x000000
+        .udata_setddram.o      udata   0x0000fe       data   0x000000
+        .idata_setcgram.o      idata   0x0000fe       data   0x000000
+        .udata_setcgram.o      udata   0x0000fe       data   0x000000
+        .idata_readdata.o      idata   0x0000fe       data   0x000000
+        .udata_readdata.o      udata   0x0000fe       data   0x000000
+        .idata_readaddr.o      idata   0x0000fe       data   0x000000
+        .udata_readaddr.o      udata   0x0000fe       data   0x000000
+        .idata_putsxlcd.o      idata   0x0000fe       data   0x000000
+        .udata_putsxlcd.o      udata   0x0000fe       data   0x000000
+        .idata_putrxlcd.o      idata   0x0000fe       data   0x000000
+        .udata_putrxlcd.o      udata   0x0000fe       data   0x000000
+        .idata_openxlcd.o      idata   0x0000fe       data   0x000000
+        .udata_openxlcd.o      udata   0x0000fe       data   0x000000
+        .idata_busyxlcd.o      idata   0x0000fe       data   0x000000
+        .udata_busyxlcd.o      udata   0x0000fe       data   0x000000
+           .idata_c018i.o      idata   0x0000fe       data   0x000000
+         .idata_adcopen.o      idata   0x0000fe       data   0x000000
+         .udata_adcopen.o      udata   0x0000fe       data   0x000000
+         .idata_adcconv.o      idata   0x0000fe       data   0x000000
+         .udata_adcconv.o      udata   0x0000fe       data   0x000000
+        .idata_adcclose.o      idata   0x0000fe       data   0x000000
+        .udata_adcclose.o      udata   0x0000fe       data   0x000000
+         .idata_adcbusy.o      idata   0x0000fe       data   0x000000
+         .udata_adcbusy.o      udata   0x0000fe       data   0x000000
+        .idata_writdata.o      idata   0x0000fe       data   0x000000
+        .udata_writdata.o      udata   0x0000fe       data   0x000000
+        .idata_wcmdxlcd.o      idata   0x0000fe       data   0x000000
+        .udata_wcmdxlcd.o      udata   0x0000fe       data   0x000000
+         .idata_t0write.o      idata   0x0000fe       data   0x000000
+         .udata_t0write.o      udata   0x0000fe       data   0x000000
+          .idata_t0read.o      idata   0x0000fe       data   0x000000
+          .udata_t0read.o      udata   0x0000fe       data   0x000000
+          .idata_t0open.o      idata   0x0000fe       data   0x000000
+          .udata_t0open.o      udata   0x0000fe       data   0x000000
+         .idata_t0close.o      idata   0x0000fe       data   0x000000
+         .idata_newmain.o      idata   0x000100       data   0x000029
+           .udata_c018i.o      udata   0x000129       data   0x00000a
+                   .stack      udata   0x000500       data   0x000100
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x003914      
+                            0x003916    0x00395a      
+                            0x300003    0x300003      
+                            0x300006    0x300006      
+            14684 out of 33048 program addresses used, program memory utilization is 44%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  BusyADC   0x00000e    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcbusy.c
+                 BusyXLCD   0x0036bc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\busyxlcd.c
+                 CloseADC   0x003922    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcclose.c
+                ClosePWM1   0x003928    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1close.c
+              CloseTimer0   0x00391c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0close.c
+              CloseTimer2   0x003916    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2close.c
+               ConvertADC   0x00392c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcconv.c
+                   D10K_1   0x003732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00373e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x003730    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x0038d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0038ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x003820    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x00381e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x003726    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x0038c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x003814    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            DelayFor18TCY   0x0014f8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+             DelayPORXLCD   0x001524    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                DelayXLCD   0x001518    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                    FPA32   0x0029e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPM32   0x002b10    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                    FPS32   0x0029e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 FXD3232U   0x003576    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 FXM1616S   0x002bea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                  FXM3232   0x00320e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                  INT3216   0x002c44    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  OpenADC   0x003646    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcopen.c
+                 OpenPWM1   0x0037ce    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1open.c
+         OpenPWM1ConfigIO   0x0037ee    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1open.c
+               OpenTimer0   0x003754    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0open.c
+               OpenTimer2   0x003780    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2open.c
+                 OpenXLCD   0x002f72    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\openxlcd.c
+                  ReadADC   0x0038f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcread.c
+             ReadAddrXLCD   0x003602    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\readaddr.c
+             ReadDataXLCD   0x0035be    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\readdata.c
+               ReadTimer0   0x003682    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0read.c
+               ReadTimer2   0x0038ac    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2read.c
+           SelChanConvADC   0x0037f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcselchconv.c
+             SetCGRamAddr   0x0033f8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\setcgram.c
+               SetChanADC   0x003834    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcsetch.c
+                SetDCPWM1   0x003350    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1setdc.c
+             SetDDRamAddr   0x0033aa    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\setddram.c
+            SetOutputPWM1   0x00327e    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1setoc.c
+               TSIGN1616A   0x002c36    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+             WriteCmdXLCD   0x0034e0    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\wcmdxlcd.c
+            WriteDataXLCD   0x003494    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\writdata.c
+              WriteTimer0   0x0036f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0write.c
+              WriteTimer2   0x0038dc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2write.c
+                   _2jEnd   0x00333a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+       _D10KTCYXCODE_0010   0x003736    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x003742    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x0038d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0038d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0038d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x003824    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x00382a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                 __FpExit   0x002cae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x002cda    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+            __FpReturnNaN   0x002ca2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x002cb4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x002ccc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x002cba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x002cd4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x002cb0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x002cc8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x002d32    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x002d52    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x002d82    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+          ___for_lbl00200   0x001302    program     static                          
+          ___for_lbl00201   0x001308    program     static                          
+          ___for_lbl00202   0x0012a6    program     static                          
+       ___return_lbl00000   0x0035bc    program     static                          
+       ___return_lbl00000   0x0032d6    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x00327c    program     static                          
+       ___return_lbl00001   0x00388e    program     static                          
+       ___return_lbl00002   0x003188    program     static                          
+       ___return_lbl00047   0x000474    program     static                          
+       ___return_lbl00199   0x00130c    program     static                          
+       ___return_lbl00217   0x001516    program     static                          
+       ___return_lbl00322   0x00000c    program     static                          
+       ___return_lbl00326   0x00001c    program     static                          
+               __config_0   0x300003    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __config_1   0x300006    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                   __init   0x003930    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                   __pa_0   0x002700    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_1   0x002708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_10   0x0027bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_11   0x0027ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_12   0x0027e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_13   0x0027fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_14   0x002812    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_15   0x002822    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_16   0x002838    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_17   0x00284a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_18   0x00285c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_19   0x002866    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_2   0x002712    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_20   0x002876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_21   0x002886    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_22   0x002896    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_23   0x0028a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_24   0x0028b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_25   0x0028b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_26   0x0028c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_27   0x0028cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_28   0x0028d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_29   0x0028e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_3   0x00271c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_30   0x0028fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_31   0x002918    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_32   0x002932    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_33   0x00294a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_34   0x002954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_35   0x002962    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_36   0x00296a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_37   0x002974    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_38   0x002984    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_39   0x002992    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_4   0x002734    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_40   0x00299e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_41   0x0029aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_42   0x0029b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_43   0x0029bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_44   0x0029c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_45   0x0029cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_46   0x0029d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_5   0x002748    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_6   0x002764    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_7   0x00276e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_8   0x00277a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_9   0x00279c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+               __string_0   0x002f61    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_1   0x002f55    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_10   0x002ee2    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_11   0x002ed7    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_12   0x002ec6    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_13   0x002eb7    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_14   0x002ead    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_15   0x002ea5    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_16   0x002e95    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_17   0x002e7f    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_18   0x002e6d    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_19   0x002e58    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_2   0x002f48    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_20   0x002e56    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_21   0x002e54    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_22   0x002e52    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_23   0x002e50    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_24   0x002e4e    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_25   0x002e4c    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_26   0x002e4a    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_27   0x002e48    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_28   0x002e46    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_29   0x002e44    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_3   0x002f36    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_30   0x002e42    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_31   0x002e40    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_32   0x002e3e    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_33   0x002e3c    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_34   0x002e3a    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_35   0x002e38    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_36   0x002e28    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_37   0x002e1b    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_38   0x002e0d    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_39   0x002dfd    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_4   0x002f25    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_40   0x002def    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_41   0x002ddc    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_42   0x002dcd    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_43   0x002dbc    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_44   0x002dae    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_5   0x002f16    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_6   0x002f14    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_7   0x002f02    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_8   0x002ef0    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_9   0x002eed    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __tmplbl_31   0x0012ba    program     static                          
+              __tmplbl_42   0x002896    program     static                          
+              __tmplbl_43   0x0026de    program     static                          
+              __tmplbl_44   0x0026c4    program     static                          
+              __tmplbl_85   0x001e16    program     static                          
+            __zero_memory   0x003854    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                _do_cinit   0x0030ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _false   0x0035b8    program     static                          
+                 _startup   0x003874    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              _usart_putc   0x003890    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+               _user_putc   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
+              captureMode   0x001bfc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                checkFlag   0x0011a2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+  checkFlashMemoryPresent   0x000590    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+         checkSectorErase   0x0008ba    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+         checkSectorWrite   0x0009fe    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                 clearLCD   0x00004a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                compare_l   0x00386a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                copy_loop   0x00315e    program     static                          
+            copy_one_byte   0x003164    program     static                          
+                 dataPoll   0x000480    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+          dataShiftRegOff   0x00018c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+           dataShiftRegOn   0x000190    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+              displayMenu   0x001afc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       displayTemperature   0x001a3c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+           displayWelcome   0x001902    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                     done   0x003188    program     static                          
+             done_copying   0x003172    program     static                          
+    flashWriteAddrAndByte   0x00030e    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+             getLastWrite   0x000f80    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                  getSign   0x0014f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+   getTemperatureFraction   0x0014e8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+    getTemperatureInteger   0x0014de    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+           heartBeatCount   0x001888    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                 high_ISR   0x001c0a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+    high_interrupt_vector   0x000008    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                init_Buff   0x000f68    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+     init_FlashMemoryPins   0x000040    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+ init_HeartbeatInterrupts   0x00178a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       init_HeartbeatPins   0x001798    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+   init_InterruptPriority   0x001bb0    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+    init_KeypadInterrupts   0x00153a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+          init_KeypadPins   0x001530    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                 init_LCD   0x001bb8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+   init_ShiftRegisterPins   0x00002c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+init_StandbyPowerInterrupts   0x0011ba    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+    init_StandbyPowerPins   0x0011b2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+            init_TempPins   0x001324    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+              init_Timer0   0x00179c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                  isdigit   0x0037aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                 jANotInf   0x002b2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotInf   0x002a0c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x002aa0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jAandWsetup   0x002a70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x002a5e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x002a02    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x002a1a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jBothFinite   0x002b3c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x002b48    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+            jDifOrPosSign   0x002a2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                     jEnd   0x00333c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x003304    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jExit   0x002ca0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+               jFinalSign   0x002b08    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jHaveZero   0x002b44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                    jLoop   0x003324    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x0032fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x002c80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x002c90    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                   jMatch   0x0037ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                     jMax   0x002c54    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x002c62    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x002c58    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                 jNoMatch   0x0037cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+             jNotBothZero   0x002a32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jNotInf   0x002c70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jPkLoop   0x002ce8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x002d32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x002d1a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x002d04    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x002cbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jShiftDone   0x002ac8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x002aba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x002af8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jUnpkA1   0x002d5c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x002d74    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x002d6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x002d8c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x002da4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x002d9a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x002d7e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jWNotNeg   0x002ab4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    jZero   0x002c6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+               jZero1and2   0x002cc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+    latchDataWriteCommand   0x0002fc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                     loop   0x0038a0    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+                     loop   0x003884    program     static                          
+                     loop   0x003584    program     static                          
+                   loop_h   0x003862    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x00386c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  low_ISR   0x001cb8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+     low_interrupt_vector   0x000018    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                     main   0x001d82    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+             ow_read_byte   0x001294    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\ow.h
+                 ow_reset   0x0011c2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\ow.h
+            ow_write_byte   0x001222    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\ow.h
+            playAlarmTone   0x0016f8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                     putc   0x00318a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                putrsXLCD   0x003446    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\putrxlcd.c
+                 putsXLCD   0x00352c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\putsxlcd.c
+        readAndDisplayKey   0x001540    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+     revertCheckFlashPins   0x000476    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                 s_digits   0x003904    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+            s_put_n_chars   0x001dc0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+              sectorErase   0x000b30    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+           sectorReadByte   0x000da4    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+          sectorWriteByte   0x000c16    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+        setCheckFlashPins   0x000450    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                  setFlag   0x00118a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+         setReadFlashPins   0x000464    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+  setSectorEraseFlashPins   0x00045a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+ shift_register_read_byte   0x000194    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+shift_register_write_byte   0x000276    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+         shutDownSequence   0x001036    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                  sprintf   0x003040    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
+     startHeartBeatSample   0x0017a8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+         startTempConvert   0x001328    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+      stopHeartBeatSample   0x0017ce    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                   strlen   0x0032ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x003306    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     test   0x003106    program     static                          
+                 vfprintf   0x001dec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+               write_Buff   0x000fea    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+               zero_block   0x003862    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+            DelayCounter1   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+             LSBTemporary   0x00010a       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+             MSBTemporary   0x000108       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               SSTPresent   0x000100       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TempInt   0x00010c       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                  TempLSB   0x0000ad       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                  TempMSB   0x0000ac       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+              Temperature   0x0000ae       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
+                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1setdc.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcsetch.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcselchconv.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcread.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcopen.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0read.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               allowCount   0x00011c       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              captureFlag   0x00011e       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                    count   0x000104       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                  counter   0x000106       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                curr_byte   0x00012c       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x00012e       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x000130       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   degree   0x00010e       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+               displayLCD   0x0000ea       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               displayOut   0x0000d6       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              displaySign   0x000119       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                fracFloat   0x00010f       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                  fracInt   0x000115       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+               heartBeats   0x00011a       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               keyPressed   0x0000c2       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                 mainReg1   0x000082       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                      out   0x000098       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+              portCValues   0x000120       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                powerFlag   0x000102       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                     prom   0x000129       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                shiftReg1   0x000080       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                     sign   0x000113       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+          temperatureFlag   0x000127       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+      temperatureFraction   0x000125       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       temperatureInteger   0x000123       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+          temperatureSign   0x000122       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                        x   0x000117       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                        y   0x000084       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+               _user_putc   0x000006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
+    high_interrupt_vector   0x000008    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       ___return_lbl00322   0x00000c    program     static                          
+                  BusyADC   0x00000e    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcbusy.c
+     low_interrupt_vector   0x000018    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       ___return_lbl00326   0x00001c    program     static                          
+   init_ShiftRegisterPins   0x00002c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+     init_FlashMemoryPins   0x000040    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                 clearLCD   0x00004a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+          dataShiftRegOff   0x00018c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+           dataShiftRegOn   0x000190    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+ shift_register_read_byte   0x000194    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+shift_register_write_byte   0x000276    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+    latchDataWriteCommand   0x0002fc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+    flashWriteAddrAndByte   0x00030e    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+        setCheckFlashPins   0x000450    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+  setSectorEraseFlashPins   0x00045a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+         setReadFlashPins   0x000464    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+       ___return_lbl00047   0x000474    program     static                          
+     revertCheckFlashPins   0x000476    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                 dataPoll   0x000480    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+  checkFlashMemoryPresent   0x000590    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+         checkSectorErase   0x0008ba    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+         checkSectorWrite   0x0009fe    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+              sectorErase   0x000b30    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+          sectorWriteByte   0x000c16    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+           sectorReadByte   0x000da4    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                init_Buff   0x000f68    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+             getLastWrite   0x000f80    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+               write_Buff   0x000fea    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+         shutDownSequence   0x001036    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                  setFlag   0x00118a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                checkFlag   0x0011a2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+    init_StandbyPowerPins   0x0011b2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+init_StandbyPowerInterrupts   0x0011ba    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                 ow_reset   0x0011c2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\ow.h
+            ow_write_byte   0x001222    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\ow.h
+             ow_read_byte   0x001294    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\ow.h
+          ___for_lbl00202   0x0012a6    program     static                          
+              __tmplbl_31   0x0012ba    program     static                          
+          ___for_lbl00200   0x001302    program     static                          
+          ___for_lbl00201   0x001308    program     static                          
+       ___return_lbl00199   0x00130c    program     static                          
+            init_TempPins   0x001324    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+         startTempConvert   0x001328    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+    getTemperatureInteger   0x0014de    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+   getTemperatureFraction   0x0014e8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                  getSign   0x0014f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+            DelayFor18TCY   0x0014f8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       ___return_lbl00217   0x001516    program     static                          
+                DelayXLCD   0x001518    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+             DelayPORXLCD   0x001524    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+          init_KeypadPins   0x001530    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+    init_KeypadInterrupts   0x00153a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+        readAndDisplayKey   0x001540    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+            playAlarmTone   0x0016f8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+ init_HeartbeatInterrupts   0x00178a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       init_HeartbeatPins   0x001798    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              init_Timer0   0x00179c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+     startHeartBeatSample   0x0017a8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+      stopHeartBeatSample   0x0017ce    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+           heartBeatCount   0x001888    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+           displayWelcome   0x001902    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       displayTemperature   0x001a3c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              displayMenu   0x001afc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+   init_InterruptPriority   0x001bb0    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                 init_LCD   0x001bb8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              captureMode   0x001bfc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                 high_ISR   0x001c0a    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                  low_ISR   0x001cb8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                     main   0x001d82    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+            s_put_n_chars   0x001dc0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                 vfprintf   0x001dec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+              __tmplbl_85   0x001e16    program     static                          
+              __tmplbl_44   0x0026c4    program     static                          
+              __tmplbl_43   0x0026de    program     static                          
+                   __pa_0   0x002700    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_1   0x002708    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_2   0x002712    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_3   0x00271c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_4   0x002734    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_5   0x002748    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_6   0x002764    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_7   0x00276e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_8   0x00277a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_9   0x00279c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_10   0x0027bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_11   0x0027ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_12   0x0027e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_13   0x0027fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_14   0x002812    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_15   0x002822    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_16   0x002838    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_17   0x00284a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_18   0x00285c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_19   0x002866    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_20   0x002876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_21   0x002886    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+              __tmplbl_42   0x002896    program     static                          
+                  __pa_22   0x002896    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_23   0x0028a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_24   0x0028b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_25   0x0028b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_26   0x0028c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_27   0x0028cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_28   0x0028d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_29   0x0028e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_30   0x0028fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_31   0x002918    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_32   0x002932    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_33   0x00294a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_34   0x002954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_35   0x002962    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_36   0x00296a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_37   0x002974    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_38   0x002984    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_39   0x002992    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_40   0x00299e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_41   0x0029aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_42   0x0029b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_43   0x0029bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_44   0x0029c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_45   0x0029cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __pa_46   0x0029d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                    FPS32   0x0029e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPA32   0x0029e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x002a02    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x002a0c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x002a1a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+            jDifOrPosSign   0x002a2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+             jNotBothZero   0x002a32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x002a5e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jAandWsetup   0x002a70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x002aa0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jWNotNeg   0x002ab4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x002aba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftDone   0x002ac8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x002af8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jFinalSign   0x002b08    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPM32   0x002b10    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotInf   0x002b2e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+              jBothFinite   0x002b3c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jHaveZero   0x002b44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x002b48    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 FXM1616S   0x002bea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x002c36    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                  INT3216   0x002c44    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x002c54    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x002c58    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x002c62    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x002c6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jNotInf   0x002c70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x002c80    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x002c90    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x002ca0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+            __FpReturnNaN   0x002ca2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpExit   0x002cae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x002cb0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x002cb4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x002cba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x002cbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jZero1and2   0x002cc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x002cc8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x002ccc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x002cd4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x002cda    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jPkLoop   0x002ce8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x002d04    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x002d1a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x002d32    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x002d32    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x002d52    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA1   0x002d5c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x002d6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x002d74    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x002d7e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x002d82    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x002d8c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x002d9a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x002da4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __string_44   0x002dae    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_43   0x002dbc    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_42   0x002dcd    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_41   0x002ddc    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_40   0x002def    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_39   0x002dfd    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_38   0x002e0d    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_37   0x002e1b    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_36   0x002e28    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_35   0x002e38    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_34   0x002e3a    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_33   0x002e3c    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_32   0x002e3e    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_31   0x002e40    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_30   0x002e42    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_29   0x002e44    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_28   0x002e46    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_27   0x002e48    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_26   0x002e4a    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_25   0x002e4c    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_24   0x002e4e    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_23   0x002e50    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_22   0x002e52    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_21   0x002e54    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_20   0x002e56    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_19   0x002e58    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_18   0x002e6d    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_17   0x002e7f    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_16   0x002e95    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_15   0x002ea5    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_14   0x002ead    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_13   0x002eb7    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_12   0x002ec6    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_11   0x002ed7    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              __string_10   0x002ee2    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_9   0x002eed    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_8   0x002ef0    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_7   0x002f02    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_6   0x002f14    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_5   0x002f16    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_4   0x002f25    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_3   0x002f36    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_2   0x002f48    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_1   0x002f55    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __string_0   0x002f61    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                 OpenXLCD   0x002f72    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\openxlcd.c
+                  sprintf   0x003040    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
+                _do_cinit   0x0030ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x003106    program     static                          
+                copy_loop   0x00315e    program     static                          
+            copy_one_byte   0x003164    program     static                          
+             done_copying   0x003172    program     static                          
+                     done   0x003188    program     static                          
+       ___return_lbl00002   0x003188    program     static                          
+                     putc   0x00318a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                  FXM3232   0x00320e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x00327c    program     static                          
+            SetOutputPWM1   0x00327e    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1setoc.c
+       ___return_lbl00000   0x0032d6    program     static                          
+                   strlen   0x0032ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x0032fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x003304    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x003306    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x003324    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                   _2jEnd   0x00333a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x00333c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                SetDCPWM1   0x003350    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1setdc.c
+             SetDDRamAddr   0x0033aa    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\setddram.c
+             SetCGRamAddr   0x0033f8    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\setcgram.c
+                putrsXLCD   0x003446    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\putrxlcd.c
+            WriteDataXLCD   0x003494    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\writdata.c
+             WriteCmdXLCD   0x0034e0    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\wcmdxlcd.c
+                 putsXLCD   0x00352c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\putsxlcd.c
+                 FXD3232U   0x003576    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x003584    program     static                          
+                   _false   0x0035b8    program     static                          
+       ___return_lbl00000   0x0035bc    program     static                          
+             ReadDataXLCD   0x0035be    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\readdata.c
+             ReadAddrXLCD   0x003602    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\readaddr.c
+                  OpenADC   0x003646    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcopen.c
+               ReadTimer0   0x003682    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0read.c
+                 BusyXLCD   0x0036bc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\busyxlcd.c
+              WriteTimer0   0x0036f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0write.c
+             Delay10KTCYx   0x003726    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x003730    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x003732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x003736    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00373e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x003742    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+               OpenTimer0   0x003754    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0open.c
+               OpenTimer2   0x003780    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2open.c
+                  isdigit   0x0037aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                   jMatch   0x0037ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x0037cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                 OpenPWM1   0x0037ce    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1open.c
+         OpenPWM1ConfigIO   0x0037ee    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1open.c
+           SelChanConvADC   0x0037f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcselchconv.c
+              Delay1KTCYx   0x003814    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x00381e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x003820    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x003824    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x00382a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+               SetChanADC   0x003834    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcsetch.c
+            __zero_memory   0x003854    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x003862    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_h   0x003862    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                compare_l   0x00386a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x00386c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 _startup   0x003874    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x003884    program     static                          
+       ___return_lbl00001   0x00388e    program     static                          
+              _usart_putc   0x003890    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+                     loop   0x0038a0    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+               ReadTimer2   0x0038ac    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2read.c
+              Delay10TCYx   0x0038c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0038ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x0038d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0038d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0038d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x0038d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              WriteTimer2   0x0038dc    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2write.c
+                  ReadADC   0x0038f2    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcread.c
+                 s_digits   0x003904    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+              CloseTimer2   0x003916    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t2close.c
+              CloseTimer0   0x00391c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0close.c
+                 CloseADC   0x003922    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcclose.c
+                ClosePWM1   0x003928    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1close.c
+               ConvertADC   0x00392c    program     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcconv.c
+                   __init   0x003930    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300003    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               __config_1   0x300006    program     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\t0read.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcopen.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcread.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcselchconv.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\adcsetch.c
+                  __tmp_0   0x000014       data     static C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Cfiles\pw1setdc.c
+                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  __tmp_0   0x000014       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
+            DelayCounter2   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+                shiftReg1   0x000080       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                 mainReg1   0x000082       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                        y   0x000084       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                      out   0x000098       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                  TempMSB   0x0000ac       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                  TempLSB   0x0000ad       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+              Temperature   0x0000ae       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+               keyPressed   0x0000c2       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               displayOut   0x0000d6       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               displayLCD   0x0000ea       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               SSTPresent   0x000100       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\SST39SF040v2.h
+                powerFlag   0x000102       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                    count   0x000104       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+                  counter   0x000106       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\standbypower.h
+             MSBTemporary   0x000108       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+             LSBTemporary   0x00010a       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                  TempInt   0x00010c       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                   degree   0x00010e       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                fracFloat   0x00010f       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                     sign   0x000113       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                  fracInt   0x000115       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+                        x   0x000117       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+              displaySign   0x000119       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\Dallas1822P.h
+               heartBeats   0x00011a       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+               allowCount   0x00011c       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              captureFlag   0x00011e       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+              portCValues   0x000120       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+          temperatureSign   0x000122       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+       temperatureInteger   0x000123       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+      temperatureFraction   0x000125       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+          temperatureFlag   0x000127       data     extern C:\Users\fudge\Documents\MPLABX Projects\TeamRedSoloIntegration.X\newmain.c
+                     prom   0x000129       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x00012c       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x00012e       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x000130       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+
+
