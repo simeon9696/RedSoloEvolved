@@ -66,7 +66,49 @@ void init_Timer1(void){
     OpenCapture1 (CAPTURE_INT_ON & C1_EVERY_RISE_EDGE); //Configure capture mode to interrupt on every rising edge
 }
 
-void outputHRV(void){
+void HRV(void){
+    
+    float temp_val = 0;
+    if(risingedge == 0)
+    {
+        if (x == 0)
+        {
+            value1 = ReadCapture1();//Store value
+        }
+        else
+        {
+            value2 = ReadCapture1();//Store value
+        }
+    }
+    else if ( (risingedge == 1) && (x == 0))
+    {
+        value2 = ReadCapture1();   
+    }
+    
+    risingedge++;
+    
+    if( (risingedge > 1) || (x == 1))
+    {
+        x = 1;
+        interval = 65535*overflow + (value2 - value1);//calculate interval
+        nn++;
+        lastval = value2;
+        value1 = lastval;
+        temp_val = interval/1000;
+
+        if(temp_val > 50){
+            nn50++;
+            PORTDbits.RD3 = !PORTDbits.RD3;//Toggle pin
+        }
+        risingedge = 0;
+        if(nn == 10)
+        {
+            //Calculate HRV 
+            hrv = ((float)nn50/(float)10)*100;               
+            flag = 1;
+        }
+    }    
+    
     //Display HRV reading on LCD
     sprintf(output,"HRV: %d",hrv);  
     while(BusyXLCD()); 
@@ -92,55 +134,19 @@ void high_ISR(void);
 #pragma interrupt high_ISR
 void high_ISR(void){
     
-    float temp_val = 0;
+    
     if(PIR1bits.TMR1IF==1){
         PIR1bits.TMR1IF=0;//Clear flag
         overflow++;
     } 
-    if(PIR1bits.CCP1IF==1){  
-       
+    if(PIR1bits.CCP1IF==1)
+    {         
         PIR1bits.CCP1IF = 0;  
-        if(risingedge == 0)
-        {
-            if (x == 0)
-            {
-                value1 = ReadCapture1();//Store value
-            }
-            else
-            {
-                value2 = ReadCapture1();//Store value
-            }
-        }
-        else if ( (risingedge == 1) && (x == 0))
-        {
-            value2 = ReadCapture1();   
-        }
-        risingedge++;
-        if( (risingedge > 1) || (x == 1))
-        {
-            x = 1;
-            interval = 65535*overflow + (value2 - value1);//calculate interval
-            nn++;
-            lastval = value2;
-            value1 = lastval;
-            temp_val = interval/1000;
-            
-            if(temp_val > 50){
-                nn50++;
-                PORTDbits.RD3 = !PORTDbits.RD3;//Toggle pin
-            }
-            risingedge = 0;
-            if(nn == 10)
-            {
-                //Calculate HRV 
-                hrv = ((float)nn50/(float)10)*100;               
-                flag = 1;
-                
-                CloseCapture1();
-                CloseTimer1();
-            }   
-        }      
+        HRV();
+        CloseCapture1();
+        CloseTimer1();
     }   
+    
     return;
 }
 
@@ -148,7 +154,7 @@ void high_ISR(void){
  
  void main(){
     
-    init_LCD(); //initialise LCD
+    init_LCD(); //initialize LCD
      
     RCONbits.IPEN = 1;    //Enable Priority Levels 
     IPR1bits.CCP1IP = 1;  //Set CCPIP interrupt to high priority
@@ -164,12 +170,6 @@ void high_ISR(void){
      
     init_Timer1(); //Initialize Timer
      
-    while(1)
-    {
-        if (flag ==1)
-        {
-            outputHRV();
-        }
-    }
+    while(1){}
     
  }
